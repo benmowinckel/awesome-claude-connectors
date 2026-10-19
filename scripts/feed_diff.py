@@ -104,6 +104,25 @@ def load_feed(path=None):
         "next_cursor": data.get("next_cursor") if isinstance(data, dict) else None,
         "stale_feeds": data.get("stale_feeds") if isinstance(data, dict) else None,
     }
+    # The feed passed limit=5000 on 2026-10-09; later pages come by next_cursor.
+    # Without them every server past the first page reads as a removal or a miss.
+    cursor = meta["next_cursor"]
+    while cursor and not path:
+        page = json.loads(fetch(f"{FEED_URL}&cursor={cursor}"))
+        if not page.get("servers"):
+            raise ValueError(f"feed page at cursor {cursor} has no 'servers' list")
+        servers.extend(page["servers"])
+        cursor = page.get("next_cursor")
+    meta["next_cursor"] = cursor
+    if meta["total"] is not None and len(servers) != meta["total"]:
+        raise ValueError(
+            f"feed returned {len(servers)} servers against total={meta['total']}"
+            + (
+                " (offline file holds one page; refetch with pagination)"
+                if path
+                else ""
+            )
+        )
     return servers, meta
 
 
