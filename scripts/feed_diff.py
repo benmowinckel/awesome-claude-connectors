@@ -259,7 +259,8 @@ def on_web(name, slugs, slug_keys, slug_loose):
 
 
 def md_cell(text, limit=None):
-    text = clean(text).replace("|", "\\|")
+    # A word joiner after "@" keeps feed-supplied text from @-mentioning GitHub users in the filed issue.
+    text = re.sub(r"(?<![/\w])@(?=\w)", "@\u2060", clean(text).replace("|", "\\|"))
     if limit and len(text) > limit:
         text = text[: limit - 1] + "…"
     return text

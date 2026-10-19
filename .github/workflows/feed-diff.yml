@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v6
         with:
           python-version: "3.13"
@@ -31,7 +33,7 @@ jobs:
             feed-diff-full.md
           retention-days: 90
       - name: Open the report as an issue
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@e8ef132d6df98ed982188e460ebb3b5d4ef3a9cd # v5.0.1
         with:
           title: "Feed diff: ${{ steps.diff.outputs.date }}"
           content-filepath: ./feed-diff.md
