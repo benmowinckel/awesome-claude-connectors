@@ -58,6 +58,18 @@ VERIFIED = {
         "site title is 'C8 Hedge — AI-Powered FX Hedging' (verified 2026-10-08); 'FX' is a descriptor, not part of the brand",
     ("Sgewise", "segwise.ai"):
         "the catalog spells the name 'Sgewise' (slug sgewise); the vendor is Segwise and the site is its product page (verified 2026-10-08)",
+    ("Glo Invoie", "gloinvoice.com"):
+        "site title is 'Glo Invoice — Invoicing, Estimates & Payments for Service Businesses'; the catalog name drops a 'c' (verified 2026-10-19)",
+    ("SecureSMTP", "securessmtp.com"):
+        "site title is 'Transactional email API and SMTP service — SecureSMTP'; the vendor's domain doubles the 's' (verified 2026-10-19)",
+    ("Clerq MCP", "www.clerq-ip.com"):
+        "site title is 'Clerq | Home'; the domain adds '-ip' and 'MCP' is the connector suffix (verified 2026-10-19)",
+    ("Dýrabær", "dyrabaer.is"):
+        "site title is 'Dýrabær – gæludýrabúð ...'; the domain transliterates 'ý' and 'æ' (verified 2026-10-19)",
+    ("LinkDrop", "www.lnkdrp.com"):
+        "site title is 'LinkDrop - Trackable PDF share links for AI agents'; the domain drops the vowels (verified 2026-10-19)",
+    ("StrategyX", "www.strategyexe.com"):
+        "site title is 'Home | Strategy Execution Software | StrategyX'; the domain spells out 'execution' (verified 2026-10-19)",
 }
 
 

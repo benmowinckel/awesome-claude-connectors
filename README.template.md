@@ -19,13 +19,13 @@ This list is maintained weekly. To contribute, see [CONTRIBUTING.md](CONTRIBUTIN
 > This is an independent, community-maintained list. Not affiliated with, endorsed by, or sponsored by Anthropic PBC. "Claude" and related marks are the property of Anthropic PBC. Each connector is the property of its respective owner.
 
 > [!TIP]
-> ### Connector Snap Stack — October 8, 2026
+> ### Connector Snap Stack — October 19, 2026
 >
 > Each sweep features a persona and a small stack of connectors that click together. Past stacks are archived in [docs/stacks](docs/stacks/); sweep-by-sweep history lives in the [changelog](docs/CHANGELOG.md).
 >
-> **The medical-bill and appeal night** — Med Bill Check *(new)* · Appeal My Claim *(new)* · Google Drive · Google Calendar · running in **Claude Desktop**
+> **The kitchen-table bills night** — Lower My Bill *(new)* · Zeno Household *(new)* · Gmail · Google Calendar · running in **Claude Desktop**
 >
-> The person in the household who handles the medical paperwork, one Desktop conversation: pull the itemized ER bill and the insurer's Explanation of Benefits from the family folder in Google Drive, run each line of the bill through Med Bill Check against the Medicare rate for the state, decode the denial code on the EOB with Appeal My Claim and check the appeal deadline for that plan type, have Appeal My Claim draft the appeal letter and Med Bill Check draft a financial-assistance request to the hospital, then put the appeal deadline and a follow-up reminder on Google Calendar. Two new connectors that know the billing and appeal rules, two proven ones that hold the paperwork and the dates, with Claude carrying the case between them; both letters come out as drafts to review and send. Composed, not yet field-tested — if you run it against a live bill, send a Field Report (see CONTRIBUTING).
+> A US household working through its recurring bills, one Desktop conversation: find the latest internet, mobile and insurance bills in Gmail, get Lower My Bill's provider-specific call script for each and its reminder to call before a promotional rate ends, check in Zeno Household whether the savings change next month's cash-flow forecast and leave a budget note for a partner, then put the call reminders on Google Calendar. Two new connectors that know the negotiation playbook and the household's numbers, two proven ones that hold the bills and the dates; the calls themselves stay with the person. Composed, not yet field-tested — if you run it against a live set of bills, send a Field Report (see CONTRIBUTING).
 
 ---
 
