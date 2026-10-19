@@ -2,7 +2,7 @@
 
 # Development Tools
 
-[All categories](../README.md#categories) · 206 connectors · Last updated October 8, 2026
+[All categories](../README.md#categories) · 205 connectors · Last updated October 8, 2026
 
 Connectors marked **`A`** are built and maintained by Anthropic; **`C`** marks the in-app catalog's Community badge (third-party built, not vetted like web-directory entries). Methodology and the held-entry policy are in the [README](../README.md) and [CONTRIBUTING.md](../CONTRIBUTING.md).
 
@@ -25,7 +25,6 @@ Connectors marked **`A`** are built and maintained by Anthropic; **`C`** marks t
 - [Atlassian Rovo](https://www.atlassian.com/rovo) - Access Jira and Confluence. *Use case: Issue tracking, searching wiki documentation, project management within the Atlassian ecosystem.*
 - [Atsign AI Architect](https://atsign.com) **`C`** - Turns a visual application blueprint of components, identities, permissions, policies, data flows, and communication paths into structured instructions for an AI coding assistant. *Use case: Sketching identities and permissions before a project starts, handing a blueprint to a coding assistant as build instructions, revising the architecture when requirements change.*
 - [Autodesk Product Help](https://help.autodesk.com) - Securely access Autodesk product documentation. *Use case: Looking up AutoCAD/Revit/Maya/Fusion docs, troubleshooting Autodesk software, in-context help retrieval.*
-- [Autonoma](https://getautonoma.com) **`C`** - Agentic end-to-end testing platform that runs AI agents against live pull-request preview deployments and reports results back on the PR. *Use case: Diagnose and fix a broken preview deploy by pulling build logs, runtime logs, and deploy status directly from a coding agent.*
 - [Awesome Repositories](https://awesome-repositories.com) **`C`** - Searches a curated directory of open-source GitHub repositories by intent and taxonomy tags, finds alternatives to a named repository or product, and returns repository details with the evidence behind each tag. *Use case: Finding a self-hosted alternative to a SaaS analytics tool, comparing Python PDF parsing libraries, checking why a repo is tagged as a CLI.*
 - [Bauta](https://bauta.app) **`C`** - Turn what Claude builds into a live link in seconds. *Use case: Getting a shareable link for a landing page built in chat, sending it to a client to preview immediately.*
 - [Baz](https://baz.ai) **`C`** - An engineering review platform that indexes code repositories and enforces org-specific review standards. *Use case: Searching indexed repos across the org to plan a change before writing code and pushing the plan back for team review.*

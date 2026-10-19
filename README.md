@@ -4,9 +4,9 @@
   <img src="media/banner.svg" alt="Awesome Claude Connectors" width="800">
 </p>
 
-> A comprehensive directory of the connectors in Anthropic's [Claude Connectors catalog](https://www.anthropic.com/partners/mcp) — 4,677 MCP integrations across both catalog surfaces (the curated web directory and the in-app catalog, which additionally surfaces community-built and desktop-extension connectors), plus 43 held pending vendor verification, organized by category with descriptions and use cases.
+> A comprehensive directory of the connectors in Anthropic's [Claude Connectors catalog](https://www.anthropic.com/partners/mcp) — 4,676 MCP integrations across both catalog surfaces (the curated web directory and the in-app catalog, which additionally surfaces community-built and desktop-extension connectors), plus 44 held pending vendor verification, organized by category with descriptions and use cases.
 
-**Last updated:** October 8, 2026 | **Connectors tracked:** 4,677 listed + 43 held | **Categories:** 30
+**Last updated:** October 8, 2026 | **Connectors tracked:** 4,676 listed + 44 held | **Categories:** 30
 
 Claude connectors are MCP (Model Context Protocol) servers that extend Claude with real-time access to external tools, data sources, and services. They work across Claude.ai, Claude Desktop, Claude Mobile, Claude Code, and Claude Cowork. Connectors in the **curated web directory** are vetted by Anthropic for security, reliability, and compatibility; the **in-app catalog** additionally surfaces community-built and local desktop-extension connectors that Anthropic makes available but does not itself build or vet. This list tracks the union of both surfaces — see CONTRIBUTING.md for the two-surface methodology.
 
@@ -53,7 +53,7 @@ Each category has its own page; the list outgrew what GitHub will render as a si
 | [Data and Analytics](categories/data-and-analytics.md)                     | 438        |
 | [Design and Creative](categories/design-and-creative.md)                   | 161        |
 | [Desktop Automation](categories/desktop-automation.md)                     | 16         |
-| [Development Tools](categories/development-tools.md)                       | 206        |
+| [Development Tools](categories/development-tools.md)                       | 205        |
 | [Documents and Files](categories/documents-and-files.md)                   | 110        |
 | [Education](categories/education.md)                                       | 78         |
 | [Entertainment](categories/entertainment.md)                               | 57         |
@@ -84,6 +84,7 @@ Every link on the category pages has been checked against the live page — a UR
 | Agent Grid                                         | Create, share, and evolve interactive artifacts with humans and AI agents.                                                                                       | agentgrid.sh exists but is a coding-agent canvas, not an interactive-artifact platform; no confident match.                                                                     |
 | AI Dispatcher by FieldCamp                         | AI dispatch and scheduling for field-service teams — view your jobs, technicians and board, run AI dispatch, and accept assignments, right from Claude.          | shares vendor URL fieldcamp.ai with "FieldCamp" (list lint rejects duplicate links); needs its own product page (2026-09-14)                                                    |
 | Aster Share                                        | Create in Claude. Publish with Aster.                                                                                                                            | the vendor site returns a hosting error on every page (deployment disabled, HTTP 402) (2026-09-25)                                                                              |
+| Autonoma                                           | Agentic QA to find all your bugs before deploying to production.                                                                                                 | vendor homepage returns 404 on every path in link checks a week apart, and the MCP host's apex has no address record (2026-10-19)                                               |
 | Capi Agent                                         | Find products from independent online stores in Saudi Arabia, the Gulf and Türkiye                                                                               | shares its vendor URL with Capi Agent for Merchants, whose product that page is; no page for the shopping connector was found (2026-09-25)                                      |
 | Code de loi - GTACityRP                            | Les codes de loi fictifs du serveur de jeu de rôle GTACityRP : lire un article, chercher un sujet, parcourir un Code.                                            | vendor site presents itself as the government of the State of Tennessee on a non-government domain (a roleplay server's site); held under the impersonation screen (2026-10-08) |
 | ConstruChain Tracker                               | Review authorized construction progress, weekly snapshots and schedules.                                                                                         | shares vendor URL construchain.com.br with "ConstruChain Vision" (list lint rejects duplicate links); needs its own product page (2026-10-08)                                   |

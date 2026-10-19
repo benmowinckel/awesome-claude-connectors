@@ -3816,14 +3816,6 @@
       "use_case": "Looking up AutoCAD/Revit/Maya/Fusion docs, troubleshooting Autodesk software, in-context help retrieval."
     },
     {
-      "name": "Autonoma",
-      "url": "https://getautonoma.com",
-      "marker": "C",
-      "category": "Development Tools",
-      "description": "Agentic end-to-end testing platform that runs AI agents against live pull-request preview deployments and reports results back on the PR.",
-      "use_case": "Diagnose and fix a broken preview deploy by pulling build logs, runtime logs, and deploy status directly from a coding agent."
-    },
-    {
       "name": "Bauta",
       "url": "https://bauta.app",
       "marker": "C",
@@ -6490,7 +6482,7 @@
     },
     {
       "name": "Spendify",
-      "url": "https://spendify.ca",
+      "url": "https://spendify.money",
       "marker": "C",
       "category": "Finance and Trading",
       "description": "Track spending, manage budgets, and analyze finances.",
@@ -39368,6 +39360,11 @@
       "name": "Prativedan",
       "catalog_description": "Write your academic report with Claude, in your university's format, and download it as a Word document.",
       "why_held": "vendor URL is the developer's personal site, and the product's own Claude page and homepage return 404 (2026-10-08)"
+    },
+    {
+      "name": "Autonoma",
+      "catalog_description": "Agentic QA to find all your bugs before deploying to production.",
+      "why_held": "vendor homepage returns 404 on every path in link checks a week apart, and the MCP host's apex has no address record (2026-10-19)"
     }
   ]
 }
