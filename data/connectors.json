@@ -53244,6 +53244,15 @@
       "description": "Searches supply-chain shipments, assets, items, locations, labels and alerts in Sensos and runs operational analytics queries on tracked journeys.",
       "use_case": "Finding where a delayed shipment is and what alert fired, listing shipments at risk right now, reviewing alerts that fired overnight.",
       "subcategory": "Geospatial and Industry Data"
+    },
+    {
+      "name": "Social Security Claiming Estimator by MySSAgent",
+      "url": "https://myssagent.com",
+      "marker": "C",
+      "category": "Finance and Trading",
+      "description": "Computes Social Security claiming estimates, returning full retirement age, benefits by claiming age from 62 to 70 and breakeven age, and lets licensed advisors list clients, pull stored claiming analyses and re-run them on records on file.",
+      "use_case": "Estimating benefits at 62, 67 and 70 for a client born in 1962, pulling a married client's survivor analysis, refreshing an analysis before a review meeting.",
+      "subcategory": "Accounting Payroll and Financial Planning"
     }
   ],
   "held": [

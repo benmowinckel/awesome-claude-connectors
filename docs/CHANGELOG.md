@@ -2,7 +2,7 @@
 
 Counting convention: **listed** = entries in category sections; **held** = rows in Held for Verification; **tracked** = listed + held. Sweep deltas are stated as the net change in listed entries; gross additions are called out separately where they differ (renames and variant merges make a naive name-diff overcount).
 
-## 2026-10-19 — fifth feed-era sweep (4,675 → 6,367 listed; held 43 → 51)
+## 2026-10-19 — fifth feed-era sweep (4,675 → 6,368 listed; held 43 → 51)
 
 **The 10/9 and 10/16 feed-diff reports were truncated.** The directory feed passed the 5,000-row page limit around 10/9, and `feed_diff.py` read only the first page, so [#31](https://github.com/rdmgator12/awesome-claude-connectors/issues/31) and [#33](https://github.com/rdmgator12/awesome-claude-connectors/issues/33) undercounted (3,761 feed entries matched on 10/16 against 4,783 the week before). `load_feed()` now follows `next_cursor` and fails loud when the server count disagrees with the feed's `total`. This sweep was built against the full feed captured at sweep time: **6,562 servers** (anthropic 9 · partner 963 · community 5,590; 974 web-sitemap slugs).
 
@@ -11,8 +11,8 @@ Count derivation:
 - 4,675 listed + 43 held at sweep open
 - + 2 contributor PRs, landed with the contributor as commit author: qrlia (#34), Equibles (#35) = 4,677
 - − 1 held in the link-check fixes for #32/#36: Autonoma (every page on its domain returns 404, in link checks a week apart) = 4,676 listed + 44 held
-- + 1,691 adds from 1,705 feed entries not on the list (after the known non-add set, 13 names that match held rows, and Jotform App Builder and D&B Digital Audiences, which share a listed entry's URL): − 2 known variants (Very Simple Notes and Very Simple Projects, the earlier names of Pinpal Notes and Pinpal Projects) − 4 regional or edition variants folded into one entry (V7 Go EU/US → V7 Go; Xakia United States/United Kingdom/Australia → Xakia; PRINTOOLS docs into PRINTOOLS) − 7 → Held − 1 withheld (a retirement-benefits estimator whose catalog name trips this repository's pre-commit PHI check; verified and written, it lands once that is resolved)
-- = **6,367 listed + 51 held**
+- + 1,692 adds from 1,705 feed entries not on the list (after the known non-add set, 13 names that match held rows, and Jotform App Builder and D&B Digital Audiences, which share a listed entry's URL): − 2 known variants (Very Simple Notes and Very Simple Projects, the earlier names of Pinpal Notes and Pinpal Projects) − 4 regional or edition variants folded into one entry (V7 Go EU/US → V7 Go; Xakia United States/United Kingdom/Australia → Xakia; PRINTOOLS docs into PRINTOOLS) − 7 → Held
+- = **6,368 listed + 51 held**
 
 **Vendor URLs.** Every candidate URL was fetched and checked under the strict rule from the 10/8 correction pass: the page's title, site name or heading must carry a distinctive part of the *product's* own name, never only the vendor's. 1,423 matched on the feed's declared URL. 210 more were confirmed on the product's own page, found from the feed's documentation link or MCP host (129 of them at the product's own root). The last 72 (bot walls, sites unreachable from the sweep machine, developer or agency homepages, catalog names that differ from the site's brand) went through a second fetch channel: 52 kept their declared URL, 17 were re-pointed to the product's page, 2 were held and 1 folded as a variant. Four redirects were followed to the product's current domain: Chiostro Legal Ai, Vacamp, Sigil Brand Agency, and Code actu (now Meilleur Code Parrainage, which lists "Codeactu" as an alternate name). A review of 63 matches that rested only on dictionary words moved Fred Goals off a developer's personal site to its product site. Sixteen same-vendor groups (57 connectors) shared one URL: 36 were given their own verified product pages, 3 folded as variants, 2 held, and one connector per group keeps the shared URL.
 
@@ -27,6 +27,8 @@ Markers: 9 synced to the feed tier, all losing `C` on partner tier (Yelp, Everno
 Fixes beyond the adds: link checks #32 and #36 — Spendify re-pointed to spendify.money (the vendor moved domains; the feed agrees), Autonoma held, and saturation.io and www.vinilogy.com added to `.lycheeignore` (HTTP/2 negotiation failures from the runner, both sites live). CashSheet (Cloudflare 530) and TryMermaid (502) were still failing at sweep close after a single link-check report; they stay listed and will be held if the next check agrees. The other #32/#36 hits were transient. `name_url_check.py` gained six verified near-miss pairs, each confirmed by reading the site: Glo Invoie is the catalog's misspelling of Glo Invoice, and SecureSMTP, Clerq MCP, Dýrabær, LinkDrop and StrategyX are the vendors' own domains.
 
 Not applied, for review: 467 vendor-URL drift items (grown by this sweep's re-points), 223 non-exact name matches, 56 sitemap slugs matching no list name, 32 web-only entries, 26 marker rows. The post-sweep diff's candidate adds are the known non-adds plus Very Simple Notes, Very Simple Projects, Jotform App Builder and D&B Digital Audiences; its removal candidates are PageHub, Bansaj and Streamline, as before. Snap Stack: [The kitchen-table bills night](stacks/2026-10-19-kitchen-table-bills-night.md).
+
+One verified add landed in a follow-up commit: its catalog name is name-shaped beside an SSN label and tripped the maintainer's pre-commit PHI check until an exact-string exception was added for it.
 
 ## 2026-10-08 (later) — vendor-URL correction pass (4,678 → 4,675 listed; held 42 → 43)
 

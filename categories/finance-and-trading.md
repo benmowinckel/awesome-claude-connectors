@@ -2,7 +2,7 @@
 
 # Finance and Trading
 
-[All categories](../README.md#categories) · 720 connectors · Last updated October 19, 2026
+[All categories](../README.md#categories) · 721 connectors · Last updated October 19, 2026
 
 Connectors marked **`A`** are built and maintained by Anthropic; **`C`** marks the in-app catalog's Community badge (third-party built, not vetted like web-directory entries). Methodology and the held-entry policy are in the [README](../README.md) and [CONTRIBUTING.md](../CONTRIBUTING.md).
 
@@ -128,6 +128,7 @@ Connectors marked **`A`** are built and maintained by Anthropic; **`C`** marks t
 - [Saturation](https://saturation.io) **`C`** - The financial operating system for production teams. *Use case: Checking a production budget's remaining balance, approving a crew expense before a shoot, comparing actual spend against the budget.*
 - [Simetrik](https://simetrik.com) **`C`** - Reads transaction reconciliation data across selected workspaces and passes tasks to the in-app agent that matches transactions and handles unmatched items. *Use case: Reviewing unmatched transactions in a reconciliation, checking match status across sources, asking the in-app agent to run a control task.*
 - [Sincow](https://www.sincow.co) **`C`** - Queries SINCOW ERP receivables, payables, inventory, accounting entries, treasury balances, purchase orders and payroll, and prepares proposals for journal entries, quotes, orders, contacts and payroll changes that are confirmed inside SINCOW. *Use case: Checking overdue receivables by customer, reviewing bank balances, proposing a journal entry for review.*
+- [Social Security Claiming Estimator by MySSAgent](https://myssagent.com) **`C`** - Computes Social Security claiming estimates, returning full retirement age, benefits by claiming age from 62 to 70 and breakeven age, and lets licensed advisors list clients, pull stored claiming analyses and re-run them on records on file. *Use case: Estimating benefits at 62, 67 and 70 for a client born in 1962, pulling a married client's survivor analysis, refreshing an analysis before a review meeting.*
 - [Sporo](https://www.sporo.no) **`C`** - Reads Norwegian company books in Sporo, retrieving account balances, bank transactions, customer and supplier invoices, posted VAT lines, the profit and loss statement and recent vouchers, each linked back to Sporo. *Use case: Checking a small company's profit for the second quarter, listing last month's supplier invoices before a board meeting, reviewing posted VAT lines ahead of a filing.*
 - [stub](https://stub.africa) - AI-native accounting for small businesses, with invoices, quotes, customer statements and payments available to Claude. *Use case: Creating an invoice for a client, checking overdue bills, sending a customer statement.*
 - [SumIt](https://getsumit.com) **`C`** - Queries family office accounting data including ledgers, chart of accounts, journal entries, account balances, balance sheets, and income summaries. *Use case: Reviewing balances across entities at month end, tracing a journal entry behind an unexpected figure, pulling an income summary for a family meeting.*
